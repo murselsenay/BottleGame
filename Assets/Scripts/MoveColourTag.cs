@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveObjects : MonoBehaviour
+public class MoveColourTag : MonoBehaviour
 {
     public GameObject colorTag;
     private Vector3 mOffset;

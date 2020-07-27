@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Move : MonoBehaviour
+public class MoveBottle : MonoBehaviour
 {
     private Vector3 mOffset;
     private float mZCoord;
     Vector3 startPosition;
-    bool canTurn = true;
     Rigidbody rb;
     bool canDrag = false;
     public GameObject targetShelf;
-    public static Move instance;
+    public static MoveBottle instance;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +33,7 @@ public class Move : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        if (gameObject.GetComponent<Move>().enabled == true)
+        if (gameObject.GetComponent<MoveBottle>().enabled == true)
         {
             startPosition = gameObject.transform.position;
             canDrag = true;
@@ -45,7 +44,7 @@ public class Move : MonoBehaviour
     }
     private void OnMouseUp()
     {
-        if (gameObject.GetComponent<Move>().enabled == true)
+        if (gameObject.GetComponent<MoveBottle>().enabled == true)
         {
             canDrag = false;
             rb.isKinematic = true;
@@ -83,7 +82,7 @@ public class Move : MonoBehaviour
     }
     private void OnMouseDrag()
     {
-        if (canDrag && gameObject.GetComponent<Move>().enabled==true)
+        if (canDrag && gameObject.GetComponent<MoveBottle>().enabled==true)
         {
             transform.position = GetMouseWorldPos() + mOffset;
 

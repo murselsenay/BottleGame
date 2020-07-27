@@ -12,7 +12,7 @@ public class Bottle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.GetComponent<Move>().enabled = false;
+        gameObject.GetComponent<MoveBottle>().enabled = false;
         gameObject.transform.GetChild(2).GetComponent<SphereCollider>().enabled = false;
     }
 

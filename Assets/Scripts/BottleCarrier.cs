@@ -88,7 +88,7 @@ public class BottleCarrier : MonoBehaviour
         for (int i = 0; i < gameObject.transform.childCount; i++)
         {
             gameObject.transform.GetChild(i).GetComponent<CapsuleCollider>().radius = 0.03f;
-            gameObject.transform.GetChild(i).GetComponent<Move>().enabled = true;
+            gameObject.transform.GetChild(i).GetComponent<MoveBottle>().enabled = true;
             for (int j = 4; j < gameObject.transform.GetChild(i).childCount; j++)
             {
                 gameObject.transform.GetChild(i).transform.GetChild(j).gameObject.GetComponent<Rigidbody>().isKinematic = true;

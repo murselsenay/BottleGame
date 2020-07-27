@@ -68,10 +68,9 @@
     <Compile Include="Assets\Scripts\CameraMovements.cs" />
     <Compile Include="Assets\Scripts\DontGoThroughThings.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
-    <Compile Include="Assets\Scripts\Move.cs" />
-    <Compile Include="Assets\Scripts\MoveObjects.cs" />
+    <Compile Include="Assets\Scripts\MoveBottle.cs" />
+    <Compile Include="Assets\Scripts\MoveColourTag.cs" />
     <Compile Include="Assets\Scripts\MovePill.cs" />
-    <Compile Include="Assets\Scripts\PillMove.cs" />
     <Compile Include="Assets\Scripts\TryAgain.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Ms/Documents/GitHub/BottleGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
